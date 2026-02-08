@@ -1,0 +1,13 @@
+body{
+    background: #020618;
+    color: #e5eaee;
+    display: grid;
+    justify-self: center;
+}
+.bar{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;  
+  width: 100%;
+  background: green;
+}
