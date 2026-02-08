@@ -1,4 +1,7 @@
 // import fs from 'fs/promises';
+
+import { response } from "express";
+
 // const fs = require('fs')
 const form = document.getElementById("myForm");
 
@@ -19,3 +22,13 @@ localStorage.setItem("item", local)
 
 console.log(data);
 });
+function sendData(data){
+    fetch('127.0.0.1:5000/update', {
+        method: 'POST'
+    }).then(
+        data => response.json()
+    ).then(
+        data => console.log(data)
+        
+    )
+}
